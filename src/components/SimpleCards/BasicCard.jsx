@@ -3,7 +3,7 @@ import { AdaptiveCard } from "adaptivecards-react";
 const BasicCard = () => {
     let card = {
         type: "AdaptiveCard",
-        version: "1.0",
+        version: "1.3",
         body: [
             {
                 type: "TextBlock",
@@ -22,8 +22,13 @@ const BasicCard = () => {
 
     let hostConfig = {
         fontFamily: "Segoe UI, Helvetica Neue, sans-serif",
+        fontStlye: "italic",
     };
-    return <AdaptiveCard payload={card} hostConfig={hostConfig} />;
+    return (
+        <>
+            <AdaptiveCard payload={card} hostConfig={hostConfig} />
+        </>
+    );
 };
 
 export default BasicCard;

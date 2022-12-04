@@ -1,9 +1,10 @@
-import BasicCard from "./components/BasicCard";
+import { BasicCard, Input } from "./components/";
 
 function App() {
     return (
         <>
-            <BasicCard />
+            {/* <BasicCard /> */}
+            <Input />
         </>
     );
 }
